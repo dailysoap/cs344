@@ -18,5 +18,5 @@ link_directories( ${CMAKE_BINARY_DIR}/bin)
 set(HW1_files main.cpp reference_calc.cpp compare.cpp)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 
-cuda_add_executable(HW1 ${HW1_files} ${hdr} ${cu})
+cuda_add_executable(${CMAKE_PROJECT_NAME} ${HW1_files} ${hdr} ${cu})
 target_link_libraries(${CMAKE_PROJECT_NAME} ${OpenCV_LIBS})
